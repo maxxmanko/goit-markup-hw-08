@@ -1,0 +1,38 @@
+.masterpiacies {
+  padding: 60px 0;
+
+  &__list {
+    display: inline-flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0 8px 15px 0;
+  }
+
+  &__item:nth-child(n + 4) {
+    margin: 0 8px 0 0;
+  }
+}
+
+@include for-size(tablet) {
+  .masterpiacies {
+    padding: 60px 0;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0 8px 0 0;
+    }
+  }
+}
+
+@include for-size(desktop) {
+  .masterpiacies {
+    padding: 94px 0;
+  }
+}
