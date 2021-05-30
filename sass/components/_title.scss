@@ -1,0 +1,41 @@
+.title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
+  
+  .title--alt {
+    color: var(--alt-title);
+  }
+  
+  .section__title {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    margin: 0 0 30px 0;
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin: 0 0 50px 0;
+    }
+  }
+  
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--alt-title);
+    margin: 0 0 30px 0;
+    padding: 0;
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }

@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/card-set";
+
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/menu";
+@import "./components/title";
+@import "./components/socials";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/contact-form";
+@import "./components/portfolio-filter";
+@import "./components/portfolio-button";
+
+@import "./layouts/section";
+@import "./layouts/page-header";
+@import "./layouts/hero";
+@import "./layouts/skils";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio";

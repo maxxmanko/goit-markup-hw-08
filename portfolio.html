@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio|Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+
+<!-- Header-->
+    <header class="page-header">
+        <div class="container page-header__container">
+
+            <!-- LOGO -->
+            <a href="./index.html" class="link logo page-header__logo"><span class="logo__web">Web</span><span
+                    class="logo__studio">Studio</span></a>
+            <!-- Mobile menu -->
+            <button data-menu-button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container">
+                <svg class="menu-btn__svg" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menuclose" href="./images/sprite.svg#icon-menuclose"></use>
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div data-menu class="menu-container" id="menu-container">
+                <ul class="list menu">
+                    <li class="page-header__menu-item"><a class="link menu__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="page-header__menu-item"><a class="link menu__link menu__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="page-header__menu-item"><a class="link menu__link" href="">Контакты</a></li>
+                </ul>
+            
+                <div>
+                    <ul class="list contacts page-header__contacts">
+                        <li class="page-header__contacts-item">
+                            <a class="link menu__phone" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="page-header__contacts-item">
+                            <a class="link menu__mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu__soc">
+                        <a class="link menu__soc-link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a class="link menu__soc-link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a class="link menu__soc-link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a class="link menu__soc-link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main navigation -->
+            <div class="page-header__main-nav">
+                <nav>
+                    <ul class="list menu">
+                        <li class="page-header__menu-item"><a class="link menu__link"
+                                href="./index.html">Студия</a></li>
+                        <li class="page-header__menu-item"><a class="link menu__link  menu__link--current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="page-header__menu-item"><a class="link menu__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contakts-->
+
+                <ul class="list contacts page-header__contacts">
+                    <li class="page-header__contacts-item">
+                        <a class="link contacts-link page-header__contacts-link" href="mailto:info@devstudio.com">
+                            <svg class="page-header__mail-icon" width="16px" height="12px">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="nav-contacts__item">
+                        <a class="link contacts-link page-header__contacts-link" href="tel:+380961111111">
+                            <svg class="page-header__phone-icon" width="10px" height="16px">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section portfolio">
+            <div class="container">
+                <h1 class="visually-hidden">Portfolio</h1>
+                <h2 class="visually-hidden">Наши проекты</h2>
+                <ul class="list portfolio__filter">
+                    <li class="portfolio__filter-item"><button type="button" class="portfolio__btn">Все</button></li>
+                    <li class="portfolio__filter-item"><button type="button" class="portfolio__btn">Веб-сайты</button></li>
+                    <li class="portfolio__filter-item"><button type="button" class="portfolio__btn">Приложения</button></li>
+                    <li class="portfolio__filter-item"><button type="button" class="portfolio__btn">Дизайн</button></li>
+                    <li class="portfolio__filter-item"><button type="button" class="portfolio__btn">Маркетинг</button></li>
+                </ul> 
+                <ul class="list card-set portfolio__project">
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio1.webp 1x, ./images/portfolio/desktop/portfolio1@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio1.webp 1x, ./images/portfolio/tablet/portfolio1@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio1.webp 1x, ./images/portfolio/mobile/portfolio1@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio1.jpg 1x, ./images/portfolio/desktop/portfolio1@2x.jpg 2x" 
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio1.jpg 1x, ./images/portfolio/tablet/portfolio1@2x.jpg 2x" 
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio1.jpg 1x, ./images/portfolio/mobile/portfolio1@2x.jpg 2x" 
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio1.jpg" alt="Фото веб-сайта" width="450" height="294"/>
+                                </picture>
+                                <p class="portfolio__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Технокряк</h3>
+                                <p class="portfolio__label">Веб-сайт</p>
+                            </div>
+                        </a>                                                
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio2.webp 1x, ./images/portfolio/desktop/portfolio2@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio2.webp 1x, ./images/portfolio/tablet/portfolio2@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio2.webp 1x, ./images/portfolio/mobile/portfolio2@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio2.jpg 1x, ./images/portfolio/desktop/portfolio2@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio2.jpg 1x, ./images/portfolio/tablet/portfolio2@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio2.jpg 1x, ./images/portfolio/mobile/portfolio2@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio2.jpg" alt="Фото постера" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Постер это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Постер New Orlean vs Golden Star</h3>
+                                <p class="portfolio__label">Дизайн</p>
+                            </div>
+                        </a>                        
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio3.webp 1x, ./images/portfolio/desktop/portfolio3@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio3.webp 1x, ./images/portfolio/tablet/portfolio3@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio3.webp 1x, ./images/portfolio/mobile/portfolio3@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio3.jpg 1x, ./images/portfolio/desktop/portfolio3@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio3.jpg 1x, ./images/portfolio/tablet/portfolio3@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio3.jpg 1x, ./images/portfolio/mobile/portfolio3@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio3.jpg" alt="Фото приложения" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Seafood это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Ресторан Seafood</h3>
+                                <p class="portfolio__label">Приложение</p>
+                            </div>
+                        </a>                        
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio4.webp 1x, ./images/portfolio/desktop/portfolio4@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio4.webp 1x, ./images/portfolio/tablet/portfolio4@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio4.webp 1x, ./images/portfolio/mobile/portfolio4@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio4.jpg 1x, ./images/portfolio/desktop/portfolio4@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio4.jpg 1x, ./images/portfolio/tablet/portfolio4@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio4.jpg 1x, ./images/portfolio/mobile/portfolio4@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio4.jpg" alt="Фото проекта" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Prime это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Проект Prime</h3>
+                                <p class="portfolio__label">Маркетинг</p>
+                            </div>
+                        </a>                        
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio5.webp 1x, ./images/portfolio/desktop/portfolio5@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio5.webp 1x, ./images/portfolio/tablet/portfolio5@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio5.webp 1x, ./images/portfolio/mobile/portfolio5@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio5.jpg 1x, ./images/portfolio/desktop/portfolio5@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio5.jpg 1x, ./images/portfolio/tablet/portfolio5@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio5.jpg 1x, ./images/portfolio/mobile/portfolio5@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio5.jpg" alt="Фото проекта" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Boxes это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Проект Boxes</h3>
+                                <p class="portfolio__label">Приложение</p>
+                            </div> 
+                        </a>                         
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio6.webp 1x, ./images/portfolio/desktop/portfolio6@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio6.webp 1x, ./images/portfolio/tablet/portfolio6@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio6.webp 1x, ./images/portfolio/mobile/portfolio6@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio6.jpg 1x, ./images/portfolio/desktop/portfolio6@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio6.jpg 1x, ./images/portfolio/tablet/portfolio6@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio6.jpg 1x, ./images/portfolio/mobile/portfolio6@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio6.jpg" alt="Фото веб-сайта" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Borders это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Inspiration has no Borders</h3>
+                                <p class="portfolio__label">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio7.webp 1x, ./images/portfolio/desktop/portfolio7@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio7.webp 1x, ./images/portfolio/tablet/portfolio7@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio7.webp 1x, ./images/portfolio/mobile/portfolio7@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio7.jpg 1x, ./images/portfolio/desktop/portfolio7@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio7.jpg 1x, ./images/portfolio/tablet/portfolio7@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio7.jpg 1x, ./images/portfolio/mobile/portfolio7@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio7.jpg" alt="Фото журнала" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Limited это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Издание Limited Edition</h3>
+                                <p class="portfolio__label">Дизайн</p> 
+                            </div>  
+                        </a> 
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio8.webp 1x, ./images/portfolio/desktop/portfolio8@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio8.webp 1x, ./images/portfolio/tablet/portfolio8@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio8.webp 1x, ./images/portfolio/mobile/portfolio8@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio8.jpg 1x, ./images/portfolio/desktop/portfolio8@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio8.jpg 1x, ./images/portfolio/tablet/portfolio8@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio8.jpg 1x, ./images/portfolio/mobile/portfolio8@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio8.jpg" alt="Фото проекта" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">LAB это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Проект LAB</h3>
+                                <p class="portfolio__label">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-set__item portfolio__item">
+                        <a href="" class="link portfolio__link">
+                            <div class="portfolio__thumb">
+                                <picture>
+                                    <source srcset="./images/portfolio/desktop/portfolio9.webp 1x, ./images/portfolio/desktop/portfolio9@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/tablet/portfolio9.webp 1x, ./images/portfolio/tablet/portfolio9@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/mobile/portfolio9.webp 1x, ./images/portfolio/mobile/portfolio9@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="./images/portfolio/desktop/portfolio9.jpg 1x, ./images/portfolio/desktop/portfolio9@2x.jpg 2x"
+                                        media="(min-width: 1200px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/tablet/portfolio9.jpg 1x, ./images/portfolio/tablet/portfolio9@2x.jpg 2x"
+                                        media="(min-width: 768px)" type="image/jpeg" />
+                                    <source srcset="./images/portfolio/mobile/portfolio9.jpg 1x, ./images/portfolio/mobile/portfolio9@2x.jpg 2x"
+                                        media="(max-width: 767px)" type="image/jpeg" />
+                                    <img src="./images/portfolio/mobile/portfolio9.jpg" alt="Фото приложения" width="450" height="294" />
+                                </picture>
+                                <p class="portfolio__overlay">Business это современная площадка распространения коронавируса. Компании
+                                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="portfolio__meta">
+                                <h3 class="portfolio__title">Growing Business</h3>
+                                <p class="portfolio__label">Приложение</p>
+                            </div>
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__contacts-soc-tablet-container">
+                <div>
+                    <a href="./index.html" class="link logo"><span class="logo__web">Web</span><span
+                            class="logo__studio--alt">Studio</span></a>
+                    <address class="footer__address">
+                        <ul class="list footer__contacts">
+                            <li><a class="link footer__map" href="https://goo.gl/maps/hGPVcPBZvQdgs4619" target="_blank"
+                                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li><a class="link footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a class="link footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__soc">
+                    <h3 class="title title--alt footer__title">Присоединяйтесь</h3>
+                    <ul class="list socials">
+                        <li class="socials__item">
+                            <a href="" class="socials__link footer__socials-link" target="_blank" rel="noopener noreferrer">
+                                <svg class="socials__svg footer__socials-svg">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link footer__socials-link" target="_blank" rel="noopener noreferrer">
+                                <svg class="socials__svg footer__socials-svg">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link footer__socials-link" target="_blank" rel="noopener noreferrer">
+                                <svg class="socials__svg footer__socials-svg">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link footer__socials-link" target="_blank" rel="noopener noreferrer">
+                                <svg class="socials__svg footer__socials-svg">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__form">
+                <h3 class="title title--alt footer__title">Подпишитесь на рассылку</h3>
+                <form class="footer-form">
+                    <input type="email" name="footer-mail" class="footer-form__email" id="footer-mail"
+                        placeholder="E-mail" />
+                    <button type="submit" class="btn footer-form__button">Подписаться
+                        <svg class="footer-form__svg" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script>
+        const { height: pageHeaderHeight } = document
+            .querySelector(".page-header")
+            .getBoundingClientRect();
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+</body>
+</html>
